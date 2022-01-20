@@ -16,9 +16,7 @@ after_success:
   - docker build -t nb5683/docker-backend ./backend
   - docker build -t nb5683/docker-nginx ./nginx
 
-  - echo "$
-  
-  " | docker login -u "$DOCKER_HUB_ID" --pasword-stdin
+  - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --pasword-stdin
 
   - docker push nb5683/docker-frontend
   - docker push nb5683/docker-backend
