@@ -2,7 +2,7 @@
     "AWSEBDockerrunVersion" :2,
     "ContainerDefinitions": [
         {
-            "name" : "frotend",
+            "name" : "frontend",
             "image" : "nb5683/docker-frontend",
             "hostname" : "frontend",
             "essential" : false,
